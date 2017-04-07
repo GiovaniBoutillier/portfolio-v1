@@ -1,0 +1,170 @@
+body {
+  background-color:black;
+}
+
+.navbar {
+  background-color: rgba(0,0,0,.8);}
+
+.navbar a{
+  color: #C9314D;
+  font-size: 30px;
+}
+
+/****************************PAGE 1 CAROUSEl****************************************/
+.accueil{
+  height: 680px;
+  background-image: url("../img/accueil.jpg");
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+.accueil>div {
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 25%;
+  height: 25%;
+  width: 50%;
+}
+
+/*Giovani Boutillier*/
+.accueil>div>p:nth-of-type(1){
+      font-family:GloriaHallelujah;
+      text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
+      font-size: 50px;
+      color: white;
+}
+
+/*Developpeur Web Front End*/
+#dev {
+    font-family:GloriaHallelujah;
+    text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
+    font-size: 40px;
+    color: white;
+}
+
+.accueil button {
+      margin-top: 10%;
+      font-size: 30px;
+      text-decoration: underline;
+}
+
+
+@media all and (max-width:500px) {
+  .accueil{
+    height: 480px;
+  }
+  .accueil>div {
+    margin-top: 35%;
+  }
+  .accueil>div>p:nth-of-type(1){
+    text-align: center;
+    font-size:30px;
+}
+#dev {
+    font-size: 25px;
+}
+.accueil button {
+      font-size: 20px;
+}
+
+
+}
+/*************************************************************************************/
+/****************************************PORTFOLIO**********************************/
+/************************************************************************************/
+
+#portfolio{
+  background-image: url("../img/fond.jpg");
+  background-size: cover;
+}
+
+#ampoule {
+    height: 100px;
+    width: 100%;
+    background-image: url("../img/ampoule.jpeg");
+    background-size:contain;
+    opacity:0;
+    transition:opacity 8s;
+}
+
+.thumbnail{
+  position: relative;
+  margin-top:12%;
+  margin-bottom:11%;
+  border: none;
+}
+
+.thumbnai>img {
+    display: block;
+}
+
+.overlay {
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.thumbnail:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+  white-space: nowrap;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+h1{
+  color: #C9314D;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.text>p:nth-of-type(3){
+  font-size: 11px;
+}
+
+
+@media all and (max-width:500px) {
+  #ampoule {
+      height: 60px;
+  }
+  .thumbnail{
+    width: 100%;
+  }
+  h1{
+    font-size: 13px;
+  }
+  .text>p:nth-of-type(1){
+    font-size: 10px;
+  }
+  .text>p:nth-of-type(2){
+    font-size: 11px;
+  }
+  .text>p:nth-of-type(3){
+    font-size: 8px;
+  }
+
+}
+
+.apropos{
+  background-image: url("../img/fond2.jpg");
+  background-size: cover;
+
+}
